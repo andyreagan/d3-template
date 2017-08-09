@@ -27,6 +27,8 @@ The file you'll be seeing right away is `index.html`,
 so start there,
 and the JS code that is referenced is `js/my-viz.js` (you could start there next, or right away).
 
+For a basic tutorial, I highly recommend the introductory tutorials by [Scott Murray](http://alignedleft.com/tutorials/d3/adding-elements) and his online book.
+
 
 If you're doing the right thing and running `python3`, starting the server will look more like `python3 -m http.server`.
 Or if you have `node` installed, their `http-server` is more stable under many requests in my experience (but generally, not necessary).
