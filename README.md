@@ -19,11 +19,15 @@ cd my-new-project
 Start by launching the webserver with
 
 ```
-python -m SimpleHTTPServer
+python -m SimpleHTTPServer 8000
 ```
+navigate a browser to [http://localhost:8000/](http://localhost:8000/),
 and hack away!
+The file you'll be seeing right away is `index.html`,
+so start there,
+and the JS code that is referenced is `js/my-viz.js` (you could start there next, or right away).
 
 
-If you're hip and running `python3`, that would be `python3 -m http.server`.
+If you're doing the right thing and running `python3`, starting the server will look more like `python3 -m http.server`.
 Or if you have `node` installed, their `http-server` is more stable under many requests in my experience (but generally, not necessary).
 
