@@ -10,9 +10,8 @@ $(function() {
 
     console.log("Finished drawing rectangle.");
 
-    d3.text("data/my-data.txt",function(e,d) {
+    d3.text("data/myfile.txt",function(e,d) {
         console.log("Data loaded. Data:");
         console.log(d);
     });
 });
-
