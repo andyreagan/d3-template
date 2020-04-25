@@ -21,6 +21,15 @@ Start by launching the webserver with
 ```
 python -m SimpleHTTPServer 8000
 ```
+As of python 3, the above will return "ModuleNotFoundError: No module named 'SimpleHTTPServer'." 
+If you are using python 3, launch the webserver with
+```
+python -m http.server 8000
+```
+
+
+
+
 navigate a browser to [http://localhost:8000/](http://localhost:8000/),
 and hack away!
 The file you'll be seeing right away is `index.html`,
