@@ -4,6 +4,9 @@ import * as d3 from "d3";
 
 // Styles come in through the bundler too.
 import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap 5's JS components (Popper-powered, no jQuery). Pulled in for a
+// batteries-included template; drop this line if you only need the CSS.
+import "bootstrap";
 import "./style.css";
 
 // Replaces jQuery's $( document ).ready()
