@@ -1,5 +1,12 @@
 # D3 Template
 
+> ⚠️ **This repository is archived and no longer maintained.**
+> It has been superseded by **[cookiecutter-d3](https://github.com/andyreagan/cookiecutter-d3)**, which is the template I actually use — please start new projects there.
+>
+> If you still want this standalone template, modernized variants live on two branches:
+> - [`modernize`](../../tree/modernize) — same build-free, vendored setup with current libraries (d3 v7, jQuery 3.7.1, Bootstrap 5.3).
+> - [`vite-local`](../../tree/vite-local) — a fully local [Vite](https://vitejs.dev/) + ES modules build (d3 imported from `node_modules`, no jQuery).
+
 A minimal template for jump starting D3 Vis projects.
 
 ## Getting Started
