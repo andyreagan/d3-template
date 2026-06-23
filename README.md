@@ -3,9 +3,7 @@
 > ⚠️ **This repository is archived and no longer maintained.**
 > It has been superseded by **[cookiecutter-d3](https://github.com/andyreagan/cookiecutter-d3)**, which is the template I actually use — please start new projects there.
 >
-> If you still want this standalone template, modernized variants live on two branches:
-> - [`modernize`](../../tree/modernize) — same build-free, vendored setup with current libraries (d3 v7, jQuery 3.7.1, Bootstrap 5.3).
-> - [`vite-local`](../../tree/vite-local) — a fully local [Vite](https://vitejs.dev/) + ES modules build (d3 imported from `node_modules`, no jQuery).
+> This branch is the build-free, vendored setup with current libraries (d3 v7, jQuery 3.7.1, Bootstrap 5.3). For a fully local [Vite](https://vitejs.dev/) + ES modules build (d3 imported from `node_modules`, no jQuery), see the [`vite-local`](../../tree/vite-local) branch.
 
 A minimal template for jump starting D3 Vis projects.
 
@@ -26,7 +24,7 @@ cd my-new-project
 Start by launching the webserver with
 
 ```
-python -m SimpleHTTPServer 8000
+python3 -m http.server 8000
 ```
 navigate a browser to [http://localhost:8000/](http://localhost:8000/),
 and hack away!
@@ -36,7 +34,15 @@ and the JS code that is referenced is `js/my-viz.js` (you could start there next
 
 For a basic tutorial, I highly recommend the introductory tutorials by [Scott Murray](http://alignedleft.com/tutorials/d3/adding-elements) and his online book.
 
-
-If you're doing the right thing and running `python3`, starting the server will look more like `python3 -m http.server`.
 Or if you have `node` installed, their `http-server` is more stable under many requests in my experience (but generally, not necessary).
+
+## Dependencies
+
+Everything is vendored locally (no build step, no CDN) so the template "just works" off a static server:
+
+- [D3](https://d3js.org/) v7 (`js/d3.v7.js`)
+- [jQuery](https://jquery.com/) 3.7.1 (`js/jquery-3.7.1.min.js`)
+- [Bootstrap](https://getbootstrap.com/) 5.3 (`css/bootstrap.min.css`, `js/bootstrap.bundle.min.js`)
+
+For a modern, fully local build-tooling version (npm + [Vite](https://vitejs.dev/), ES modules, d3 imported from `node_modules`), see the `vite-local` branch.
 
